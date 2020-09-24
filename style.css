@@ -1,0 +1,16 @@
+.container > div {
+    background-color: rgba(97, 97, 97, 0.8);
+    text-align: center;
+    padding: 45px 5px;
+    font-size: 30px;
+  }
+
+  .container {
+    display: grid;
+    height: 100%;
+    align-content: center;
+    grid-template-columns: auto auto auto ;
+    grid-gap: 2px;
+    background-color: #ffffff;
+    padding: 200px 300px;
+    }
