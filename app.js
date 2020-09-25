@@ -5,7 +5,6 @@ let gameboard = [
 
 ]
 
-
 const cellDivs = document.querySelectorAll('.cell')
 
 cellDivs.forEach(el => {
@@ -16,12 +15,22 @@ cellDivs.forEach(el => {
         const selectedrow = selectedcell.dataset.row
         const selectedcol = selectedcell.dataset.col
         
-        
-        selectedcell.innerText = 'x'
+             if ( gameboard[selectedrow][selectedcol] == '-') { 
+                selectedcell.innerText = 'x'
 
-        gameboard[selectedrow][selectedcol] = 'x'
+                gameboard[selectedrow][selectedcol] = 'x'
 
-        console.log(gameboard)
+                if(gameboard[0][0] != ' ')
+                {
+                    if(gameboard[0][0] == gameboard[0][1] && gameboard[0][1] == gameboard[0][2])
+            
+                {
+                    winner = gameboard[0][0];
+                    console.log('winner')
+            }
+                }
+
+            }
     })
 });
 
