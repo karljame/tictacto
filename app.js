@@ -20,6 +20,23 @@ cellDivs.forEach(el => {
 
                 gameboard[selectedrow][selectedcol] = 'x'
 
+
+                }
+
+                function isGameover () {
+
+                    for ( let i = 0 ; i < 3; i++){
+                        if (gameboard[0][0] == 'x' && gameboard[0][1] == 'x' && gameboard[0][2] == 'x') {
+                            return true
+                        }
+
+                }
+                
+                
+                
+                
+               
+
                 if (gameboard[0][0] == 'x' && gameboard[0][1] == 'x' && gameboard[0][2] == 'x') {
                     console.log('winner')
                 }
@@ -43,6 +60,7 @@ cellDivs.forEach(el => {
                 
                 if (gameboard[0][2] == 'x' && gameboard[1][2] == 'x' && gameboard[2][2] == 'x') {
                     console.log('winner')
+                    
                 }
                 
                 if (gameboard[0][0] == 'x' && gameboard[1][1] == 'x' && gameboard[2][2] == 'x') {
@@ -52,8 +70,7 @@ cellDivs.forEach(el => {
                 if (gameboard[0][2] == 'x' && gameboard[1][1] == 'x' && gameboard[2][0] == 'x') {
                     console.log('winner')
                 }
-
-
+               
 
 
 
